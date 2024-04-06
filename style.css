@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+    width: 100%; 
+    padding: 0 2rem;
+}
+
+.procura {
+    margin-top: -30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 755px) {
+    .procura {
+     font-size: 2.375rem;
+     margin-top: 1rem;
+     padding: 0;
+     margin-bottom: 1rem;
+    }
+}
+
+.procura button {
+   margin: 0 .5rem;
+   padding: 0;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   border-radius: 50%;
+   background: #4D54FF;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+@media(max-width: 755px) {
+    .procura button {
+        font-size: 2rem;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 0.1rem;
+    }
+}
+
+.procura img {
+    width: 25px;
+    height: 25px;
+}
+
+.procura input {
+    height: 50px;
+    width: 40px;
+    padding: 0.5rem 0.5rem 0.5rem 3.1rem;
+    visibility: hidden;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.envelope {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    visibility: hidden;
+}
+
+@media(max-width: 755px) {
+    .envelope {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.conteudo-musica {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 10%;
+    margin-top: 50px;
+    padding: 2rem;
+    width: 350px;
+    height: 100px;
+    max-height: 550px;
+
+    z-index: 1;
+}
+
+@media(max-width: 755px) {
+    .conteudo-musica {
+      width: 250px;
+    }
+}
+
+.icone-musica {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-bottom: 1.25rem;
+    margin-top: 2rem;
+}
+
+@media(max-width: 755px) {
+    .icone-musica {
+      width: 6.5rem;
+      height: 6.5rem;
+      
+      margin-bottom: -2rem;
+      padding: 10px;
+      margin: 11rem;
+    }
+}
+
+.conteudo-musica h2 {
+    align-content: center;
+    font-size: 3.375rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+@media(max-width: 755px) {
+    .conteudo-musica h2 {
+     font-size: 50px;
+     margin-top: -11rem;
+     padding: 3px;
+     margin-bottom: 1rem;
+    }
+}
+
+.conteudo-musica p1 {
+    font-weight: 500;
+
+    font-size: 1.6rem; 
+    margin-top: -10px; 
+    margin-bottom: 0.9rem;
+    text-align: center;
+}
+
+.conteudo-musica::after {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 0rem;
+    background: linear-gradient(180deg, rgba(194, 188, 194, 0.00) 0%, rgba(211, 197, 197, 0.822));
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    filter: blur(4.5px);
+    height: 406px;
+    width: 350px;
+    border-radius: 50px;
+
+    z-index: -1;
+}
+
+@media(max-width: 755px) {
+    .conteudo-musica::after {
+      width: 250px;
+      height: 300px;
+
+      margin-top: 12rem;
+      top: 4rem;
+    }
+}
+
+.conteudo-clima {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    position: relative;
+
+    padding: 2rem;
+
+    width: 350px;
+    height: 100px;
+    max-height: 550px;
+    margin: 10px 3%;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+@media(max-width: 755px) {
+    .conteudo-clima {
+     width: 250px;
+    }
+}
+
+.conteudo-clima h3 {
+    font-size: 8rem;
+    line-height: 6rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+@media(max-width: 755px) {
+    .conteudo-clima h3 {
+      font-size: 57px;
+      line-height: 3rem;
+    }
+}
+
+.conteudo-clima::after {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 0rem;
+    background: linear-gradient(180deg, rgba(194, 188, 194, 0.00) 0%, rgba(211, 197, 197, 0.822));
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    filter: blur(4.5px);
+    height: 406px;
+    width: 350px;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+@media(max-width: 755px) {
+    .conteudo-clima::after {
+      width: 250px;
+      height: 290px;
+
+      top: 4rem;
+    }
+}
+
+.conteudo-clima img {
+    height: 11.5rem;
+    margin-bottom: 0.25rem;
+}
+
+@media(max-width: 755px) {
+    .conteudo-clima img {
+     height: 8.5rem;
+    }
+}
+
+.conteudo-clima h1 {
+     width: 100%;
+     margin-bottom: 0.625rem;
+     font-size: 3.375rem;
+     font-weight: 400;
+     text-transform: uppercase;
+     text-align: center;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+}
+
+@media(max-width: 755px) {
+    .conteudo-clima h1 {
+     font-size: 45px;
+     height: 8.5rem;
+     width: 150%;
+    }
+}
+
+.playlist-caixa {
+    width: 100%;
+    list-style: none;
+    visibility: hidden;
+}
+
+.playlist-caixa li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0rem 0.65rem;
+}
+
+.playlist-caixa li img {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 0.75rem;
+}
+
+.playlist-caixa li p {
+    width: 210px;
+    font-size: 2rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media(max-width: 755px) {
+    .playlist-caixa li img {
+     width: 30px;
+     height: 30px;
+    }
+    .playlist-caixa li p {
+        font-size: 1.5rem;
+    }
+}
+
+.conteudo-variacoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+}
+
+.conteudo-variacoes p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+@media(max-width: 755px) {
+    .conteudo-variacoes {
+      max-width: 170px;
+    }
+    .conteudo-variacoes p {
+        font-size: 1.5rem;
+        line-height: initial;
+    }
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@media (max-width: 755px) {
+    .container {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+}
