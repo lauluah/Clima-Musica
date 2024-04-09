@@ -9,7 +9,7 @@ O projeto Clima & Música é uma aplicação web que combina informações meteo
 - Interface amigável e responsiva, compatível com dispositivos móveis e desktops.
 - Integração com APIs externas para obter dados meteorológicos e sugestões de playlists musicais.
 - Imagens e ícones que representam o clima e a música.
-- Funcionalidade de pesquisa para permitir que os usuários encontrem informações meteorológicas e playlists.
+- Funcionalidade de pesquisa para permitir que os usuários encontrem informações meteorológicas.
 
 ## Tecnologias Utilizadas
 
@@ -17,4 +17,3 @@ O projeto Clima & Música é uma aplicação web que combina informações meteo
 - JavaScript para manipulação dinâmica da interface do usuário e chamadas de API assíncronas.
 - APIs externas, incluindo OpenWeatherMap e Spotify, para obter dados em tempo real.
 - Uso de media queries para garantir uma boa experiência em dispositivos de diferentes tamanhos.
-  
