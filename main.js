@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
             videoElement.play();
         }
     });
+    
+     videoElement.setAttribute('playsinline', '');
 });
 
 async function procurarCidade(city) {
