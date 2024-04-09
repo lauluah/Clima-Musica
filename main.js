@@ -74,15 +74,6 @@ input.addEventListener('keyup', function(event) {
 document.addEventListener('DOMContentLoaded', () => {
     fecharInput();
     recarregarVideos() 
-    
-    const videoElement = document.querySelector('.video');
-    videoElement.addEventListener('touchstart', function() {
-        if (videoElement.paused) {
-            videoElement.play();
-        }
-    });
-    
-     videoElement.setAttribute('playsinline', '');
 });
 
 async function procurarCidade(city) {
