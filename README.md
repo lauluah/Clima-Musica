@@ -17,3 +17,5 @@ O projeto Clima & Música é uma aplicação web que combina informações meteo
 - JavaScript para manipulação dinâmica da interface do usuário e chamadas de API assíncronas.
 - APIs externas, incluindo OpenWeatherMap e Spotify, para obter dados em tempo real.
 - Uso de media queries para garantir uma boa experiência em dispositivos de diferentes tamanhos.
+
+[Clique aqui para ver o projeto!](https://lauluah.github.io/Clima-Musica/)
